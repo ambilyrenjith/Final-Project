@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Michael's Furniture</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/cassini-grid.css">
+    <link rel="stylesheet" href="css/cassiniJumbotron.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/cassiniTooltip.css">
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/responsive_nav.js"></script>
+    <script src="js/sticky_nav.js"></script>
+    <script src="js/backToTop.js" type="text/javascript"></script>
+    <script src="js/cassiniTooltip.js"></script>
+    
+    <script type="text/javascript">
+    $(function(){
+        $('#buttontooltip').cassiniToolTip({
+        });
+    });
+</script>
+
+<style>
+    @media screen and (max-width:320px) {
+        .span-4 {
+            width: 100%;
+        }
+        .span-2 {
+            width:100%;
+        }
+    }
+</style>      
+    
+</head>
+<body>
+   <nav class="nav-bar " id="responsive-nav">
+    <ul class="center dark"  >
+        <a href=""><img class="responsive-logo" src="images/logo.png" alt=""> </a>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="support.html">Support</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
+       <a href="#" class="icon" >&#9776;</a>
+    </ul>
+   </nav>
+   <script>responsiveNav();</script>
+   <script>stickyNav();</script>
+   <script>
+   $(function() {
+    $("#toTop").backToTop();
+                });
+    </script> 
+
+<a href="#" id="toTop" class="back-to-top">
+    <i class="fa fa-arrow-up"></i></a>
+    <div class="grid">
+        <div class="one-col-grid">   
+        <div class="grid-element">       
+        <h2 style="text-align:center;padding:1em;">Contact Us</h2>
+        </div>
+        </div>
+    </div>        
+   <div class="one-col-grid">
+    <div class="grid-element">
+        <div class="grid">
+       
+            <form>
+                <div class="one-col-grid">
+  <div class="grid-element">
+   <fieldset>
+    <div class="grid">
+      <label class="span-2 label-inline">Name</label>
+      <input class="span-4" type="text" placeholder ="Name" value="">
+    </div>
+    
+     <div class="grid">
+      <label class="span-2 label-inline">Email</label>
+      <input class="span-4" type="email" placeholder ="Email Address" value="">
+    </div>
+    
+      <div class="grid">
+      <label class="span-2 label-inline">Phone</label>
+      <input class="span-2 sm" type="tel" placeholder ="(000) 000-000" value="">
+      </div>
+      
+      <div class="grid">
+          <label class="span-2 label-inline" for="select-menu">How did you hear about us?</label>
+              <select class="span-3" id="select-menu">
+              <option selected="">--Select--</option>
+              <option value="option-1">Magazine</option>
+              <option value="option-2">Internet Search</option>
+              <option value="option-3">Tv Ad</option>
+              <option value="option-4">Word of Mouth</option>
+              <option value="option-4">Other</option>
+             </select>
+      </div>
+      
+      <div class="grid">          
+          <label class="span-2 label-inline">Message</label>
+          <textarea class="span-2 sm " name=""></textarea>
+       </div>
+       
+     <div class="grid">
+            <div class="span-1" style="margin-left:160px;"><input id="buttontooltip" class="cassini-btn" title="Click this button to submit" type="submit" value="Submit" /></div>
+   </div>    
+     
+   </fieldset>
+  </div>
+</div> 
+            </form>
+        </div>
+    </div>
+</div>
+    
+    
+    <div class="grid">
+    <footer class="jumbotron-footer">
+    <p>Copyright &copy; 2017 | Michael's Furniture Store</p>
+    </footer>   
+    </div>    
+</body>
+</html>
